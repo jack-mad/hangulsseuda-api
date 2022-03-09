@@ -13,6 +13,8 @@ app.use(express.json({extended: true})); //express config for send json to serve
 
 //routes
 app.use("/api/users", require("./routes/users"))
+app.use("/api/seed", require("./routes/seeds"))
+//app.use("/api/lessons", require("./routes/lessons"))
 app.use('/',require('./routes/routes'))
 
 //server
