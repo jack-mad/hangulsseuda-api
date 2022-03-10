@@ -105,7 +105,7 @@ exports.signin = async (req, res) => {
 }
 
 exports.verify = async (req, res) => {
-	console.log(req.user)
+	//console.log(req.user)
 	try {
 		const foundUser = await User.findById(req.user.id).select("-password")
 		return res.json({
@@ -116,6 +116,22 @@ exports.verify = async (req, res) => {
 		console.log(error)
 		res.json({
 			msg: "사용자를 업데이트하는 동안 오류가 발생했습니다 - Ocurrió un error al actualizar el usuario."
+		})
+	}
+}
+
+exports.addLesson = async (req, res) => {
+	const { userID, character, data } = req.body
+	try {
+		const addNewLesson = await User.findByIdAndUpdate(userID,  { $push: { achievements: { character, data } } } , { new: true })
+		res.json({
+			msg: "Leccion añadida exitosamente",
+			data: addNewLesson
+		})
+	} catch (error) {
+		console.log(error)
+		res.json({
+			msg: "인증에 문제가 있었습니다 - Hubo un problema al agregar la lección."
 		})
 	}
 }

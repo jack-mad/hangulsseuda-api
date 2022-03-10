@@ -28,8 +28,8 @@ const userSchema = mongoose.Schema({
 		default: 0
 	},
 	achievements:{
-		type: [String],
-    default: ["0"]
+		type: [Object],
+    default: [{character: "0", data: "user created"}]
 	}
 })
 //model

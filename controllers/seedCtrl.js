@@ -49,7 +49,7 @@ exports.getOne = async (req, res) => {
 exports.level1 = async (req, res) => {
   try {
     const getLevel = await Seed.find({ level: 1 })
-    console.log(getLevel);
+    // console.log(getLevel);
     res.json({
 			msg: "Nivel 1 obtenido con exito",
       title: titles.level1,
@@ -66,7 +66,7 @@ exports.level1 = async (req, res) => {
 exports.level2 = async (req, res) => {
   try {
     const getLevel = await Seed.find({ level: 2 })
-    console.log(getLevel);
+    // console.log(getLevel);
     res.json({
 			msg: "Nivel 2 obtenido con exito",
       title: titles.level2,
@@ -83,7 +83,7 @@ exports.level2 = async (req, res) => {
 exports.level3 = async (req, res) => {
   try {
     const getLevel = await Seed.find({ level: 3 })
-    console.log(getLevel);
+    // console.log(getLevel);
     res.json({
 			msg: "Nivel 3 obtenido con exito",
       title: titles.level3,
@@ -100,7 +100,7 @@ exports.level3 = async (req, res) => {
 exports.level4 = async (req, res) => {
   try {
     const getLevel = await Seed.find({ level: 4 })
-    console.log(getLevel);
+    // console.log(getLevel);
     res.json({
 			msg: "Nivel 4 obtenido con exito",
       title: titles.level4,
@@ -117,7 +117,7 @@ exports.level4 = async (req, res) => {
 exports.level5 = async (req, res) => {
   try {
     const getLevel = await Seed.find({ level: 5 })
-    console.log(getLevel);
+    // console.log(getLevel);
     res.json({
 			msg: "Nivel 5 obtenido con exito",
       title: titles.level5,
@@ -134,7 +134,7 @@ exports.level5 = async (req, res) => {
 exports.level6 = async (req, res) => {
   try {
     const getLevel = await Seed.find({ level: 6 })
-    console.log(getLevel);
+    // console.log(getLevel);
     res.json({
 			msg: "Nivel 6 obtenido con exito",
       title: titles.level6,
@@ -151,7 +151,7 @@ exports.level6 = async (req, res) => {
 exports.level7 = async (req, res) => {
   try {
     const getLevel = await Seed.find({ level: 7 })
-    console.log(getLevel);
+    // console.log(getLevel);
     res.json({
 			msg: "Nivel 7 obtenido con exito",
       title: titles.level7,
@@ -168,7 +168,7 @@ exports.level7 = async (req, res) => {
 exports.level8 = async (req, res) => {
   try {
     const getLevel = await Seed.find({ level: 8 })
-    console.log(getLevel);
+    // console.log(getLevel);
     res.json({
 			msg: "Nivel 8 obtenido con exito",
       title: titles.level8,
